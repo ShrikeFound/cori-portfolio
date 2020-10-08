@@ -1,5 +1,7 @@
 console.log("works!");
 
+const mainMenu = document.getElementById("main-menu");
+
 function toggleMenu() {
-  console.log("menu toggles!");
+  mainMenu.classList.toggle("open");
 }

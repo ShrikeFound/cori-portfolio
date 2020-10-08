@@ -48,9 +48,8 @@ button::before {
   width: 100%;
   bottom: 0;
   height: 5px;
-  background-color: rgba(var(--blue), 0.3);
-  z-index: 0;
-  transition: all 250ms ease-in-out;
+  background-color: rgba(var(--yellow), 0.3);
+  transition: all 200ms ease-in-out;
 }
 
 a:hover::before,
@@ -76,14 +75,15 @@ button:hover::before {
 }
 
 .hero {
-  background-color: rgba(var(--white), 0.97);
+  background-color: rgba(var(--white), 0.9);
   width: 90%;
   height: 90%;
   display: grid;
-  padding: 2em;
+  padding: 2rem;
   grid-template-rows: max-content 1fr max-content;
   outline: 1px solid rgba(0, 0, 0, 0.3);
   outline-offset: -1rem;
+  position: relative;
 }
 .title-text {
   align-self: center;
@@ -110,6 +110,41 @@ button:hover::before {
 
 .menu-container {
   text-align: right;
+  z-index: 100;
+}
+
+.main-menu {
+  position: absolute;
+  background-color: white;
+  top: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  transform: scale(0, 0);
+  transform-origin: top right;
+  transition: 500ms all ease-in-out;
+}
+
+.main-nav-list {
+  list-style: none;
+  opacity: 0;
+  transition: 200ms all ease-out;
+  transition-delay: 0s;
+}
+
+.main-nav-item {
+  margin-bottom: 1.5rem;
+}
+
+.open {
+  transform: scale(1, 1);
+}
+.open .main-nav-list {
+  opacity: 1;
+  transition: 400ms all ease-in-out;
+  transition-delay: 300ms;
 }
 
 @media screen and (min-width: 600px) {
