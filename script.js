@@ -7,11 +7,20 @@ function toggleMenu() {
   mainMenu.classList.toggle("open");
 }
 
+function toggleHighlight(element) {
+  element.classList.toggle("highlighted");
+}
+
 function countChars(element) {
   element.innerHTML = element.innerHTML
-    .replace(/\w[^CW]/g, '<span class="hightlightable">$&</span>')
-    .replace(/[CW]/g, '<span class="hightlightable highlighted">$&</span>')
-    .replace(/\s/g, " ");
+    .replace(
+      /[^CW\s]/g,
+      '<span  onmouseover="toggleHighlight(this)" class="hightlightable">$&</span>'
+    )
+    .replace(
+      /[CW]/g,
+      '<span onmouseover="toggleHighlight(this)" class="hightlightable highlighted">$&</span>'
+    );
 }
 countChars(name);
 // countChars(degree);

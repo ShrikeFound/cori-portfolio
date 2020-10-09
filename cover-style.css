@@ -197,7 +197,6 @@ button:hover::before {
 }
 
 .hightlightable {
-  color: rgba(var(--red), 0.6);
 }
 span.highlighted {
   color: rgba(var(--green), 0.6);
