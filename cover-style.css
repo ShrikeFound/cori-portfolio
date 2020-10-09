@@ -13,6 +13,8 @@
   --red: 248, 51, 60;
   --orange: 255, 149, 5;
   --purple: 110, 68, 255;
+  --indigo: 46, 43, 95;
+  --violet: 139, 0, 255;
   --white: 255, 255, 255;
 }
 
@@ -50,7 +52,7 @@ button::before {
   bottom: 0;
   height: 5px;
   background-color: rgba(var(--yellow), 0.3);
-  transition: all 200ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 a:hover::before,
@@ -97,7 +99,8 @@ button:hover::before {
   font-size: 36px;
 }
 
-.degree {
+.degree,
+.certificate {
   font-size: 14px;
   line-height: 1.3;
   /* font-family: "Raleway", sans-serif; */
@@ -111,7 +114,7 @@ button:hover::before {
 }
 
 ::selection {
-  background-color: rgba(250, 250, 0, 0.3);
+  background-color: rgba(var(--yellow), 0.3);
 }
 
 .menu-container {
@@ -185,7 +188,8 @@ button:hover::before {
   .name {
     font-size: 53px;
   }
-  .degree {
+  .degree,
+  .certificate {
     font-size: 21px;
   }
   body {
@@ -197,7 +201,37 @@ button:hover::before {
 }
 
 .hightlightable {
+  transition: all 3s ease-in-out;
 }
 span.highlighted {
   color: rgba(var(--green), 0.6);
+  transition: all 240ms ease-in-out;
+}
+.degree span.highlighted,
+.certificate span.highlighted {
+  color: rgba(var(--red), 0.6);
+}
+.degree span.highlighted:nth-of-type(2n),
+.certificate span.highlighted:nth-of-type(2n) {
+  color: rgba(var(--orange), 0.6);
+}
+.degree span.highlighted:nth-of-type(3n),
+.certificate span.highlighted:nth-of-type(3n) {
+  color: rgba(var(--yellow), 0.6);
+}
+.degree span.highlighted:nth-of-type(4n),
+.certificate span.highlighted:nth-of-type(4n) {
+  color: rgba(var(--green), 0.6);
+}
+.degree span.highlighted:nth-of-type(5n),
+.certificate span.highlighted:nth-of-type(5n) {
+  color: rgba(var(--blue), 0.6);
+}
+.degree span.highlighted:nth-of-type(6n),
+.certificate span.highlighted:nth-of-type(6n) {
+  color: rgba(var(--purple), 0.6);
+}
+.degree span.highlighted:nth-of-type(7n),
+.certificate span.highlighted:nth-of-type(7n) {
+  color: rgba(var(--violet), 0.6);
 }
