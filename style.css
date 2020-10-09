@@ -104,7 +104,6 @@ li {
 .media-links {
   display: flex;
   justify-content: space-between;
-  font-family: "Raleway", sans-serif;
 }
 
 ::selection {
@@ -133,7 +132,6 @@ li {
   position: fixed;
   right: 3rem;
   top: 2rem;
-  font-family: "Raleway", sans-serif;
 }
 
 .main-menu {

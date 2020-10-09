@@ -110,7 +110,6 @@ button:hover::before {
 .media-links {
   display: flex;
   justify-content: space-between;
-  font-family: "Raleway", sans-serif;
 }
 
 ::selection {
@@ -120,7 +119,6 @@ button:hover::before {
 .menu-container {
   text-align: right;
   z-index: 100;
-  font-family: "Raleway", sans-serif;
 }
 
 .main-menu {
