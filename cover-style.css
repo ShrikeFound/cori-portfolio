@@ -205,31 +205,3 @@ span.highlighted {
   color: rgba(var(--green), 0.6);
   transition: all 240ms ease-in-out;
 }
-.degree span.highlighted,
-.certificate span.highlighted {
-  color: rgba(var(--red), 0.6);
-}
-.degree span.highlighted:nth-of-type(2n),
-.certificate span.highlighted:nth-of-type(2n) {
-  color: rgba(var(--orange), 0.6);
-}
-.degree span.highlighted:nth-of-type(3n),
-.certificate span.highlighted:nth-of-type(3n) {
-  color: rgba(var(--yellow), 0.6);
-}
-.degree span.highlighted:nth-of-type(4n),
-.certificate span.highlighted:nth-of-type(4n) {
-  color: rgba(var(--green), 0.6);
-}
-.degree span.highlighted:nth-of-type(5n),
-.certificate span.highlighted:nth-of-type(5n) {
-  color: rgba(var(--blue), 0.6);
-}
-.degree span.highlighted:nth-of-type(6n),
-.certificate span.highlighted:nth-of-type(6n) {
-  color: rgba(var(--purple), 0.6);
-}
-.degree span.highlighted:nth-of-type(7n),
-.certificate span.highlighted:nth-of-type(7n) {
-  color: rgba(var(--violet), 0.6);
-}
