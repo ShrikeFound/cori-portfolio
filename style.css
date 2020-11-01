@@ -59,8 +59,9 @@ button::before {
   width: 100%;
   bottom: 0;
   height: 5px;
-  background-color: rgba(var(--yellow), 0.4);
+  background-color: rgba(var(--orange), 0.4);
   transition: all 250ms ease-in-out;
+  cursor: pointer;
 }
 
 a:hover::before,

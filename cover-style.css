@@ -51,7 +51,7 @@ button::before {
   width: 100%;
   bottom: 0;
   height: 5px;
-  background-color: rgba(var(--yellow), 0.3);
+  background-color: rgba(var(--orange), 0.3);
   transition: all 250ms ease-in-out;
 }
 
