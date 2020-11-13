@@ -68,7 +68,7 @@ button:hover::before {
 
 .hero-container {
   background-color: rgba(var(--green), 0.6);
-  background-image: url("541854.jpg");
+  background-image: url("../images/541854.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
